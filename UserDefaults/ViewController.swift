@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTapped(_ sender: UIButton) {
         UserDefaults.standard.set(textField.text, forKey: "textField")
-        label.text = UserDefaults.standard.value(forKey: "textField") as? String ?? ""
+        label.text = UserDefaults.standard.object(forKey: "textField") as? String ?? ""
     }
     
 }
